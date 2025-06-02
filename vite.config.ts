@@ -4,6 +4,7 @@ import { resolve } from "node:path"
 
 // https://vite.dev/config/
 export default defineConfig({
+	base: "https://antony-hr.github.io/react-image-gallery/",
 	resolve: {
 		alias: [
 			{ find: "@", replacement: resolve(__dirname, "./src") },

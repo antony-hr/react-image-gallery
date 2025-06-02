@@ -1,0 +1,28 @@
+.item {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    overflow: hidden;
+    transition-property: box-shadow, transform;
+    transition-duration: .3s;
+}
+
+.item:hover {
+    cursor: pointer;
+    box-shadow: -6px 6px 0 0 var(--color-shadow);
+}
+
+.item:active {
+    transform: scale(0.97);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
